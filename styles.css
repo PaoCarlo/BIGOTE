@@ -1,0 +1,100 @@
+.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 200px solid rgba(145, 255, 0, 0.863);
+  }
+.cuadrado1{
+    width: 100px;
+    height: 60px;
+    left: 520;
+    background-color: rgb(253, 17, 174);
+   position: absolute;
+   border-radius: 80%;
+   position: absolute;
+   color: black;}
+  .cuadrado2{
+    width: 100px;
+    height: 60px;
+    left: unset;
+    background-color: rgb(185, 97, 156);
+    border-radius: 80%;
+    position: absolute;
+    color: black;
+    left: 740;
+  }
+body
+{
+	background-color: rgb(0, 0, 0);
+}
+header
+{
+	text-align: center;
+}
+h1
+{
+	display: inline-block;
+	position: relative;
+	color: rgb(79, 206, 20);
+	font-size: 40px;
+}
+
+h1::after,h1::before
+{
+	content: "";
+	position: absolute;
+	width: 150px;
+	height: 3px;
+	background-color: currentColor;
+	top: 0.6cm;
+}
+h1::before
+{
+	left: -150px;
+}
+h1::after
+{
+	right: -150px;
+}
+h2
+{
+	position: relative;
+	font-size: 35px;
+}
+.moustachen
+{
+	width: 180px;
+	height: 180px;
+	left: 300px;
+	border-radius: 50%;
+	position: absolute;
+	color: rgb(15, 236, 218);
+	box-shadow: 
+	   230px 120px 0 0 currentColor,
+	   380px 120px 0 0 currentColor;
+}
+.moustachen::before
+{
+	content: "";
+	position: absolute;
+	left: 110px;
+	width: 210px;
+	height: 120px;
+	border-bottom: solid 180px currentColor;
+	border-radius: 0 0 0 100%;
+	transform: rotate(-40deg);
+	transform-origin: right 210px;
+}
+.moustachen::after
+{
+	content: "";
+	position: absolute;;
+	left: 470px;
+	width: 210px;
+	height: 120px;
+	border-bottom: solid 180px currentColor;
+	border-radius: 0 0 100% 0;
+	transform: rotate(40deg);
+	transform-origin: left 210px;
+}
